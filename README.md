@@ -1,4 +1,4 @@
-# Language-of-Programming-II
+# Language-of-Programming-II :two_hearts:
 Laboratories developed during the course of Programming Laboratory II :computer: :heart:
 
 - **Laboratory 1 :baby::** 
