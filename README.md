@@ -7,7 +7,7 @@ Laboratories developed during the course of Programming Laboratory II :computer:
   
   *Objective: Learn basic Java concepts and train syntax. :heart:*
   
-- Laboratory 2 :girl: :
+- **Laboratory 2 :girl: :**
   
   *Specification*: https://docs.google.com/document/d/1IrHJo41u2EAfmczhK5wz6mkB20V8HWDfu2Z6cPF84RE/edit
   
