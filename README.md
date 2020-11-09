@@ -15,7 +15,6 @@ Laboratories developed during the course of Programming Laboratory II :computer:
   
   *Objective: Initial concepts of classes, objects, toString, documentation with javaDoc. :heart:*
   
-  *JavaDoc:*
   
   
 
@@ -25,7 +24,6 @@ Laboratories developed during the course of Programming Laboratory II :computer:
   
   *Objective: Recognize composition in the relationship between objects in Java code, use delegation to implement composition between objects, implement methods of equality between objects (equal in Java), create tests for programs that help you trust your implementation and save time when you are programming, use exceptions to handle unexpected situations in programs. :heart:*
   
-  *JavaDoc:*
   
   
 
@@ -35,7 +33,6 @@ Laboratories developed during the course of Programming Laboratory II :computer:
   
   *Objective: To understand collections as a data structure represented as an object of objects, to know the operation and implementation of basic operations of data structures (add, remove, search and iterate) in the context of objects, to use the Collections Java API with generics, especially for the ArrayList, HashSet and HashMap structures. :heart:*
   
-  *JavaDoc:*
   
   
 
@@ -46,4 +43,3 @@ Laboratories developed during the course of Programming Laboratory II :computer:
   *Objective: We have two main objectives in this lab: 1) having the experience of a lab very similar to a project in terms of structuring (a set of use cases, acceptance tests, without user interface, more functionality); 2) explore the reuse of software with composition and interfaces, identifying advantages and disadvantages of each strategy.
  :heart:*
   
-  *JavaDoc:*
