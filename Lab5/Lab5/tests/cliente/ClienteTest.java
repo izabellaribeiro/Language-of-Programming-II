@@ -27,9 +27,9 @@ class ClienteTest {
 
     @Test
     void testaConstrutorComNomeVazioOuNulo(){
-        assertThrows(IllegalArgumentException.class, () -> new Cliente("13786958822", "", "izabellaribeiro@gmail.com", "splab"));
-        assertThrows(IllegalArgumentException.class, () -> new Cliente("13786958822", " ", "izabellaribeiro@gmail.com", "splab"));
-        assertThrows(IllegalArgumentException.class, () -> new Cliente("13786958822", null, "izabellaribeiro@gmail.com", "splab"));
+        assertThrows(IllegalArgumentException.class, () -> new Cliente("13786914400", "", "izabellaribeiro@gmail.com", "splab"));
+        assertThrows(IllegalArgumentException.class, () -> new Cliente("13786914400", " ", "izabellaribeiro@gmail.com", "splab"));
+        assertThrows(NullPointerException.class, () -> new Cliente("13786914400", null, "izabellaribeiro@gmail.com", "splab"));
 
     }
 
@@ -39,14 +39,14 @@ class ClienteTest {
         assertThrows(IllegalArgumentException.class, () -> new Cliente("13786958822", "Izabella", "izabellaribeirogmail", "splab"));
         assertThrows(IllegalArgumentException.class, () -> new Cliente("13786958822", "Izabella", "", "splab"));
         assertThrows(IllegalArgumentException.class, () -> new Cliente("13786958822", "Izabella", " ", "splab"));
-        assertThrows(IllegalArgumentException.class, () -> new Cliente("13786958822", "Izabella", null, "splab"));
+        assertThrows(NullPointerException.class, () -> new Cliente("13786914400", "Izabella", null, "splab"));
     }
 
     @Test
     void testaConstrutorComLocalizacaoVaziaOuNula(){
         assertThrows(IllegalArgumentException.class, () -> new Cliente("13786958822", "Izabella", "izabellaribeiro@gmail.com", " "));
         assertThrows(IllegalArgumentException.class, () -> new Cliente("13786958822", "Izabella", "izabellaribeiro@gmail.com", ""));
-        assertThrows(IllegalArgumentException.class, () -> new Cliente("13786958822", "Izabella", "izabellaribeiro@gmail.com", null));
+        assertThrows(NullPointerException.class, () -> new Cliente("13786914400", "Izabella", "izabellaribeiro@gmail.com", null));
     }
 
     @Test

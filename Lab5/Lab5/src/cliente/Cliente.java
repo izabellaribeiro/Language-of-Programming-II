@@ -28,7 +28,7 @@ public class Cliente {
         this.validador.validacaoCPF(cpf);
         this.validador.validacaoStringNulaOuVazia(nome, "O NOME ");
         this.validador.validacaoStringNulaOuVazia(email, "O EMAIL ");
-        this.validador.validacaoStringNulaOuVazia(nome, "A LOCALIZAÇÃO ");
+        this.validador.validacaoStringNulaOuVazia(localizacao, "A LOCALIZAÇÃO ");
         this.cpf = cpf;
         this.nome = nome;
         this.email = email;

@@ -1,6 +1,9 @@
 package fornecedor;
 
+import produto.Produto;
 import util.Validador;
+
+import java.util.HashMap;
 import java.util.Objects;
 
 /*Classe responsável pelo armazenamento de informações de cada fornecedor. */
@@ -17,7 +20,10 @@ public class Fornecedor {
     private String telefone;
 
     /*Validador de entradas*/
-    private Validador validador;
+    private Validador validador = new Validador();
+
+    /*Produtos do fornecedor*/
+    private HashMap produtos;
 
     /*Construtor*/
     public Fornecedor(String nome, String email, String telefone) {
@@ -27,6 +33,7 @@ public class Fornecedor {
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
+        this.produtos = new HashMap();
     }
 
     /*Retorna o nome para identificação do fornecedor. */

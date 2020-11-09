@@ -10,10 +10,10 @@ import java.util.HashMap;
 public class ClienteController {
 
     /*Iniciação de classe de Validador que será usado para verificação de entradas*/
-    Validador validador;
+    private Validador validador;
 
     /*Map para o armazenamento de clientes cadastrados. */
-    HashMap<String, Cliente> clientes;
+    private HashMap<String, Cliente> clientes;
 
 
     /*Construtor*/
@@ -100,12 +100,13 @@ public class ClienteController {
     /** Método responsável pela remoção de clientes
      * @param cpf para identificação de qual cliente será removido do sistema.
      * */
-    public void removeCliente(String cpf) {
+    public boolean removeCliente(String cpf) {
         this.validador.validacaoCPF(cpf);
 
         if (!this.clientes.containsKey(cpf)) {
           throw new IllegalArgumentException("O cpf digitado não está presente na lista de clientes.");
         }
         this.clientes.remove(cpf);
+        return true;
     }
 }

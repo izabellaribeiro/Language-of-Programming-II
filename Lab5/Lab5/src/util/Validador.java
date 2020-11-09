@@ -5,11 +5,20 @@ import java.util.InputMismatchException;
 public class Validador {
 
     public void validacaoStringNulaOuVazia(String string, String mensagem) {
-        if ("".equals(string.trim()) || string == null) {
-            if (string == null) {
-                throw new NullPointerException(mensagem + ": NÃO PODE SER VAZIO(A) OU NULO(A)!");
-            }
-            throw new IllegalArgumentException(mensagem + ": NÃO PODE SER VAZIO(A) OU NULO(A)!");
+        validacaoVazio(string, mensagem);
+        validacaoVazio(string, mensagem);
+    }
+
+    private void validacaoVazio(String string, String mensagem) {
+        if ("".equals(string.trim())){
+            throw new IllegalArgumentException(mensagem + " NÃO PODE SER NULO(A) OU VAZIA!");
+        }
+    }
+
+
+    private void validacaoNulo(String string, String mensagem) {
+        if (string == null){
+            throw new NullPointerException(mensagem + " NÃO PODE SER NULO(A) OU VAZIA!");
         }
     }
 

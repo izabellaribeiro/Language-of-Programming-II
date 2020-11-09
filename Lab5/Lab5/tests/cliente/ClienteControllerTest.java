@@ -97,7 +97,7 @@ class ClienteControllerTest {
     void editarCadastroClienteLocal() {
         this.controller.adicionaCliente("13786914400", "Izabella",
                 "izabella.silva@ccc.ufcg.edu.br", "lsd");
-        this.controller.editaCliente("13786914400", "LOCALIDADE ", "guarita");
+        this.controller.editaCliente("13786914400", "LOCALIZACAO ", "guarita");
         assertEquals("Izabella - guarita - izabella.silva@ccc.ufcg.edu.br", this.controller.exibeCliente("13786914400"));
     }
 
@@ -115,6 +115,8 @@ class ClienteControllerTest {
 
     @Test
     void tentativaDeEdicaoParametrosNulos(){
+        this.controller.adicionaCliente("13786914400", "Izabella",
+                "izabella.silva@ccc.ufcg.edu.br", "lsd");
         assertThrows(NullPointerException.class, () -> this.controller.editaCliente(null, "cpf ", "1689635214"));
         assertThrows(NullPointerException.class, () -> this.controller.editaCliente("13786914400", null, "1689635214"));
         assertThrows(NullPointerException.class, () -> this.controller.editaCliente("13786914400", "localizacao", null));
@@ -131,8 +133,7 @@ class ClienteControllerTest {
     void removeCliente(){
         this.controller.adicionaCliente("13786914400", "Izabella",
                 "izabella.silva@ccc.ufcg.edu.br", "lsd");
-        this.controller.removeCliente("13786914400");
-        assertFalse(this.controller.clientes.containsKey("13786914400"));
+        assertTrue(this.controller.removeCliente("13786914400"));
     }
 
     @Test
